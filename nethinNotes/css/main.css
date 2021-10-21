@@ -1,0 +1,165 @@
+/*Geral*/
+*
+    {
+        font-family: Monospace;
+        color: #FFFF;
+        background-color: rgb(153, 1, 100);
+    }
+
+h2
+    {
+        position: absolute;
+        top: -51px;
+        right: 40px;
+
+        color: black;
+        font-size: 16px;
+        text-shadow: 0.5px 0.5px rgba(0, 0, 0,  0.5);
+        font-variant-position: -17px;
+
+        background-color: white ;
+        width: 280px;
+        height: 20px; 
+    }
+
+textarea
+    {
+        background-color: rgb(255, 187, 0);
+        border: none;
+        resize: none;
+
+        color: #FFFF;
+        font-size: 16px;
+        text-shadow: 0.8px 0.8px rgb(0, 0, 0);
+
+        width: 300px;
+        height: 200px;
+    }
+
+span
+    {
+        background-color: rgba(255, 255, 255, 0); 
+
+        color: black;
+    }
+
+/*Notes*/
+.notes-total
+    {
+        position: absolute;
+        top: 150px;
+        margin-top: 0px;
+        margin-left: 342px;
+
+        width: 0px;
+        height: 0px;
+        
+    }
+
+.cabe
+    {
+        position: relative;
+        top: 0px;
+        left: 20px;
+        
+        text-align: left;
+        font-size: 50px;
+
+        text-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+        transition: 1s;
+    }
+        .cabe:Hover
+        {
+            transition: 1s;
+            text-shadow: 0px 1.5px rgba(0, 0, 0, 0.5);
+        }
+
+.notes-add-btn
+    {
+        position: absolute;
+        top: 75px;
+        left: 30px;  
+
+        color: 0000; 
+        font-size: 16;
+
+        background-color:rgb(255, 255, 255);
+        border: rgb(255, 255, 255);
+        transition: 0.5s;
+        box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.5);
+    }
+    .notes-add-btn:hover
+        {
+            transition: 0.5s;
+
+            color: 0000; 
+            font-size: 16;
+
+            background-color:rgb(255, 255, 255);
+            border: rgb(255, 255, 255);
+            box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
+        }
+
+.notes
+    {
+        position: absolute;
+        top: -18px;
+        right: 0px;  
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+
+        background-color: rgb(255, 187, 0);
+        box-shadow: 2px 2px rgb(0, 0, 0,  0.5);
+        transition: 1s;
+    }    
+    .notes:hover
+        {
+            transition: 1s;
+            background-color: rgb(255, 213, 97);
+            box-shadow: 3px 3px rgb(0, 0, 0);
+        }   
+
+.notes-title
+    {
+        position: absolute;
+        top: -16px;
+        right: -170px;  
+
+        color: black;
+        font-size: 15px;
+        text-shadow: 1px 1px rgba(0, 0, 0,  0.5);
+        font-variant-position: -15px;
+
+        background-color: rgb(255, 255, 255); 
+        width: 300px;
+        height: 16px;
+
+    }  
+     
+.notes-btn
+    {   
+        color: 0000; 
+        font-size: 10;
+        background-color:rgb(255, 196, 0);
+        border: rgb(255, 255, 255);
+        border-radius: px;
+    }  
+    .notes-btn:hover
+        {   
+            background-color:rgb(255, 174, 0);
+        }  
+        
+.notesgrid
+    {
+        position: relative;
+        top: 0px;
+        width: 150px;
+        height: 100px;
+        left: 20px;
+    }

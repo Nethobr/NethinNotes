@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/lib/jquery-1.12.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="shortcut icon" href="peepoThink.ico" />
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>Nethin notes</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 class = "cabe">Nethin notes</h1>
+
+    <button  class = "notes-add-btn" id = "addbutton">Adicionar</button>
+
+    <div id = "meudiv" align = "left" class = "notes-total">     
+        <span id = "div"></span>
+    </div>
+    
+    <script>
+        var x = 0;
+    
+        $(document).ready(function()
+            {
+                $("#addbutton").click(function()
+                        {    
+                            x++;
+    
+                            alert("Nota "+x+" adicionada!");
+                            $( "#div" ).append( "<div id = 'nota' class = 'ui-draggable ui-draggable-handle'><h2>Nota "+x+"</h2><div aling = 'center' class = 'notes'><textarea>Qq era para anotar mesmo?</textarea></div></div>" );
+                           
+                            $(function() 
+                                {
+                                    $("#nota, #nota").draggable({cursor: "move", grid: [ 5, 1 ]});
+                                }
+                            ); 
+                        } 
+                );
+            }
+        );
+    </script>
+</body>
+</html>
